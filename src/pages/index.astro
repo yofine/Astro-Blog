@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Mingalaba</h1>
+      <h1 class="mr-2">About</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -41,52 +41,23 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Hey there 👋, I'm a frontend engineer, specializing in building frontend
+        infrastructure. I have tons of experience, 💪 and am always striving to
+        learn new technologies and tools to keep up with industry developments.
+        Recently, I've been diving into web3, which is an incredibly promising
+        field. 🚀 I believe blockchain technology has the potential to bring
+        many opportunities and transformations, especially in the frontend
+        domain. I hope to combine my frontend skills with web3 technology to
+        develop innovative products and applications. In my spare time, I have a
+        hobby: model-making. 🤖 I'm a Gundam model enthusiast and have made many
+        models. It's not only a fun activity but also a way to exercise my
+        patience and skills. 🎨 Finally, if you're interested in my work or
+        projects, feel free to check out my GitHub or connect with me on social
+        media. Thanks for reading! 😊
       </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
     <Hr />
-
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data }) => (
-                <Card
-                  href={`/posts/${slugify(data)}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          <Hr />
-        </>
-      )
-    }
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>
