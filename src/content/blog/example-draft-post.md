@@ -1,6 +1,6 @@
 ---
 title: Example Draft Post
-author: Sat Naing
+author: Yofine Liu
 pubDatetime: 2022-06-06T04:06:31Z
 postSlug: example-draft-post
 featured: false
